@@ -101,5 +101,25 @@
             </section>
         </main>
     </div>
+    <section class="download-section">
+    <h2>Download CV</h2>
+    <button onclick="downloadCV()" class="download-btn">Download as HTML</button>
+    <button onclick="printPDF()" class="download-btn" style="margin-left: 10px;">Save as PDF</button>
+</section>
+
+<script>
+function printPDF() {
+    window.print();
+}
+</script>
+
+<style>
+@media print {
+    .download-section {
+        display: none;
+    }
+    /* Add other print styles as needed */
+}
+</style>
 </body>
 </html>
